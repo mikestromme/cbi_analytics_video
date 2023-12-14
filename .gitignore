@@ -1,0 +1,5 @@
+venv/
+myvenv/
+**/*.pyc
+.vite
+**/node_modules/
