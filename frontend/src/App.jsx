@@ -9,16 +9,20 @@ import NavBar from './components/NavBar';
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const myWidth = 220
   return (
     <div className='App'>
-      <NavBar />
-      <Routes>
-        <Route path="" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="create" element={<Create/>}/>
-      </Routes>
+      <NavBar drawerWidth={myWidth} 
+      content = {
+      
+          <Routes>
+            <Route path="" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/create" element={<Create/>}/>
+          </Routes>
 
+        }
+      />
 
 
     </div>
