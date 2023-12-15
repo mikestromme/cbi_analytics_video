@@ -46,7 +46,7 @@ REST_FRAMEWORK = {"DEFAULT_PERMISSION_CLASSES": [
 
 CORS_ORIGIN_ALLOW = [
 
-    'http://localhost:5173/'
+    'http://localhost:5173'
 
 ]
 
