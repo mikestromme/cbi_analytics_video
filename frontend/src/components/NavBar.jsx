@@ -16,6 +16,8 @@ import InfoIcon from '@mui/icons-material/Info';
 import MenuIcon from '@mui/icons-material/Menu';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import {IconButton} from '@mui/material';
+import PunchClockIcon from '@mui/icons-material/PunchClock';
+import AddIcon from '@mui/icons-material/Add';
 
 
 export default function NavBar(props) {
@@ -58,9 +60,18 @@ export default function NavBar(props) {
               <ListItem disablePadding>
                 <ListItemButton component={Link} to="/create" selected={"/create" === path}>
                   <ListItemIcon>
-                    <BorderColorIcon/>
+                    <AddIcon/>
                   </ListItemIcon>
-                  <ListItemText primary={"Create"} />
+                  <ListItemText primary={"Add Record"} />
+                </ListItemButton>
+              </ListItem>
+
+              <ListItem disablePadding>
+                <ListItemButton component={Link} to="/timekeeping" selected={"/timekeeping" === path}>
+                  <ListItemIcon>
+                    <PunchClockIcon/>
+                  </ListItemIcon>
+                  <ListItemText primary={"Timekeeping"} />
                 </ListItemButton>
               </ListItem>
             
